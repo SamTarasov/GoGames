@@ -51,7 +51,7 @@
 }
 
 
-@media (max-width: 425px) {
+@media (max-width: 414px) {
     header{
         height: 600px;
     }
@@ -193,7 +193,7 @@
 
 
 
-@media (min-width: 426px) {    
+@media (min-width: 415px) {    
     .nav_right_mobile{
         display: none;
     }
