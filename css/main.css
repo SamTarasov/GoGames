@@ -1,0 +1,444 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #FFE6D7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header{
+    background-image: url(../img/header/bc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    gap: 1em;
+}
+.nav_right {
+    display: flex;
+    align-items: center;
+    gap: 2.5em;
+}
+.nav_link{
+    color: #446381;
+    font-weight: 500;
+    line-height: 133%;
+    font-size: clamp(12px, 1.5vw, 18px);
+}
+.nav_header_link {
+    color: #fff;
+    font-size: clamp(12px, 1.5vw, 18px);
+    padding: clamp(10px, 1.5vw, 15px) clamp(15px, 2.5vw, 25px);
+    background-color: #000;
+    border: none;
+    display: inline-block;
+    white-space: nowrap;
+
+
+    border-radius: 25px;
+    background: linear-gradient(95deg, #4499D9 17.46%, #7367BE 87.77%);
+}
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5%;
+}
+
+.header_subtitle {
+    display: flex;
+    align-items: center;
+}
+
+.header_subtitle p{
+    color: #446381;
+    font-size: clamp(14px, 3vw, 23px);
+    line-height: 104%;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.arrow_img{
+    width: 20%;
+}
+.arrow2 {
+    margin-left: 30px;
+}
+.header_title {
+    margin-top: 3%;
+    color: #446381;
+    font-size: clamp(12px, 5vw, 58px);
+    line-height: 120%;
+    font-weight: 700;
+}
+.header_title span{
+    color: #EB8382;
+    font-size: clamp(12px, 5vw, 68px);
+    line-height: 110%;
+    font-weight: 700;
+}
+.header_text {
+    margin-top: 5%;
+    color: #826F8C;
+    font-size: clamp(12px, 1.5vw, 18px);
+    font-weight: 500;
+    line-height: 161%;
+    max-width: 520px;
+}
+.header_btn {
+    margin-top: 5%;
+}
+.header_left{
+    position: relative;
+}
+.header_right {
+    position: relative;
+}
+
+.header_img_add {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 40%;
+
+    animation: moveUpToDown 3s ease-in-out infinite;
+}
+.header_img_add2 {
+    position: absolute;
+    bottom: 0;
+    right: -100px;
+    width: 40%;
+
+    animation: moveUpToDown 3s ease infinite;
+}
+.header_img_dots {
+    position: absolute;
+    bottom: 300px;
+    right: -100px;
+    width: 20%;
+
+    animation: dotsZoom 3s linear infinite;
+}
+.header_img_emotion {
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    width: 90%;
+}
+
+.header_img_plus{
+    position: absolute;
+    bottom: 0;
+    right: 180px;
+    width: 20%;
+
+    animation: movecircle 10s linear infinite;
+}
+
+/* Nav_mobile */
+
+.nav_right_mobile{
+    padding-right: 20px;
+}
+.nav_menu_mobile{
+    margin-top: 5%;
+    flex-direction: column;
+    display: none;
+    height: 100vh;
+}
+
+.nav_link_mobile{
+    margin-top: 10%;
+    color: #354f67;
+    font-weight: 500;
+    line-height: 133%;
+    font-size: 32px;
+    font-weight: 700;
+}
+.nav_menu_close{
+    display: none;
+}
+
+
+/* Main */
+
+/* About_VR */
+
+.about_vr {
+    margin-top: 5%;
+    background-image: url(../img/main/about/bc2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-bottom: 5%;
+}
+.about_vr_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10em;
+}
+
+.about_vr_right {
+    padding-top: 7%;
+}
+.about_vr_subtitle {
+    color: #446381;
+    font-size: clamp(14px, 3vw, 23px);
+    line-height: 104%;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.about_vr_title {
+    color: #EB8382;
+    font-size: clamp(12px, 5vw, 68px);
+    line-height: 110%;
+    font-weight: 700;
+    margin-top: 3%;
+}
+.about_vr_text {
+    margin-top: 5%;
+    color: #826F8C;
+    font-size: clamp(12px, 1.5vw, 18px);
+    font-weight: 500;
+    line-height: 161%;
+    max-width: 520px;
+}
+.about_vr_arrow {
+    margin-top: 3%;
+    text-align: center;
+}
+
+/* Console */
+    
+.console {
+    padding-bottom: 5%;
+    background-image: url(../img/main/console/bc3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+}
+.console_grid {
+    padding-top: 14%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10em;
+}
+.console_subtitle {
+    color: #446381;
+    font-size: clamp(14px, 3vw, 23px);
+    line-height: 104%;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.console_title {
+    color: #EB8382;
+    font-size: clamp(12px, 5vw, 68px);
+    line-height: 110%;
+    font-weight: 700;
+    margin-top: 3%;
+}
+.console_text {
+    margin-top: 5%;
+    color: #826F8C;
+    font-size: clamp(12px, 1.5vw, 18px);
+    font-weight: 500;
+    line-height: 161%;
+    max-width: 520px;
+}
+.console_arrow{
+    margin-top: 2%;
+}
+.console_btn {
+    margin-top: 3%;
+}
+.console_right {
+    position: relative;
+    padding-top: 50px;
+}
+.console_gamepad {
+    z-index: 9;
+    position: relative;
+
+    animation: moveUpToDownGamePad 3s linear infinite;
+    animation-delay: 2s;
+}
+.console_gearBig {
+    position: absolute;
+    top: -50px;
+    right: 100px;
+    z-index: 9;
+    width: 25%;
+
+    animation: movecircle 25s linear infinite;
+    animation-delay: 2s;
+
+}
+.console_gearSmall {
+    position: absolute;
+    top: 50px;
+    left: 220px;
+    z-index: 9;
+    width: 15%;
+
+    animation: movecircle 20s linear infinite;
+    animation-delay: 2s;
+
+    
+}
+.console_airGray {
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    z-index: 8;
+    width: 100%;
+}
+.console_airColor1 {
+    position: absolute;
+    top: -110px;
+    left: 50px;
+    z-index: 7;
+    width: 45%;
+}
+.console_airColor2 {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    z-index: 7;
+    width: 45%;
+}
+
+.console_bcForGamepad{
+    position: absolute;
+    top: -20px;
+    right: 40px;
+    z-index: 3;
+    width: 90%;
+}
+
+/* Pricing */
+
+.pricing {
+    padding: 4% 0;
+}
+.pricing_subtitle {
+    text-align: center;
+    color: #446381;
+    font-size: clamp(14px, 3vw, 23px);
+    line-height: 104%;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.pricing_title {
+    text-align: center;
+    color: #EB8382;
+    font-size: clamp(12px, 5vw, 68px);
+    line-height: 110%;
+    font-weight: 500;
+    margin-top: 3%;
+}
+.pricing_tarif {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+.pricing_item {
+    margin: 0 auto;
+    padding: 45px 55px 40px 40px;
+    background-color: #FBDACF;
+    border-radius: 20px;
+
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+
+
+.pricing_item_name {
+    color: #446381;
+    font-size: clamp(14px, 3vw, 23px);
+    line-height: 104%;
+    font-weight: 500;
+    margin-right: 30px;
+
+    transition: all 1s ease;
+}
+
+.pricing_item_price {
+    color: #EB8382;
+    font-size: clamp(12px, 5vw, 20px);
+    line-height: 110%;
+    font-weight: 500;
+    margin-top: 15%;
+}
+.pricing_item_price span{
+    font-size: clamp(12px, 5vw, 37px);
+}
+.pricing_item_list{
+    margin-top: 15%;
+    margin-bottom: 10px;
+}
+.pricing_item_li{
+    color: #826F8C;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 138%;
+    margin-top: 10%;
+
+    transition: all 1s ease;
+}
+.pricing_item_li_check{
+    transition: all .5s ease;
+}
+
+
+.pricing_item_btn {
+    margin-top: 20%;
+}
+.pricing_item_link {
+    text-align: center;
+    border: none;
+    font-family: 'Josefin Sans';
+    color: #fff;
+    font-size: clamp(12px, 1.5vw, 14px);
+    padding: clamp(10px, 1.5vw, 15px) clamp(10px, 2.5vw, 45px);
+    background-color: #000;
+    border: none;
+    display: inline-block;
+    white-space: nowrap;
+    width: 100%;
+
+
+    border-radius: 25px;
+    background: linear-gradient(95deg, #4499D9 17.46%, #7367BE 87.77%);
+}
+
+
+/* Footer */
+footer{
+    border-top: 1px solid #816F8C;
+    padding: 2% 0;
+}
+.footer_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_text {
+    color: #826F8C;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 175%;
+}
+
+
